@@ -139,7 +139,7 @@ input, select, textarea {
 
 		}
 
-	body, input, select, textarea {
+	body, select, input, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
@@ -427,8 +427,8 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			border-color: #78652C;
+			box-shadow: 0 0 0 2px #78652C;
 		}
 
 	select {
@@ -554,27 +554,27 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(102,102,102, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(102,102,102, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(102,102,102, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(102,102,102, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(102,102,102, 0.5) !important;
 		opacity: 1.0;
 	}
 
@@ -1777,4 +1777,45 @@ input, select, textarea {
   content: "";
   display: table;
   clear: both;
+}
+/*  Search Filter Table */
+
+.actionSearchInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #78652C; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+	color: #666;
+}
+
+.actionTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #78652C; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+.actionTable th, .actionTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+.actionTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #78652C;
+}
+
+.actionTable tr.header {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #78652C;
+}
+
+.actionTable tr.body:hover {
+  /* Add a grey background color to the table header and on hover */
+	cursor: pointer;
+  background-color: #ddd;
 }
