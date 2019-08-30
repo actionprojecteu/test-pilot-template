@@ -1902,6 +1902,8 @@ input, select, textarea {
   line-height: 100px;
   text-align: center;
   margin: 2px;*/
+	margin-bottom: 0.5rem;
+	cursor: pointer;
   display: none; /* Hidden by default */
 
 }

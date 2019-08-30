@@ -68,3 +68,13 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+/*  goTo  */
+
+function goTo(destination){
+  window.open(destination, '_blank');
+}
+
+function download(destination){
+  window.open(destination, '_blank');
+}
