@@ -113,46 +113,42 @@
 								</div>
 
 								<div id="material" class="tabcontent">
-									<input type="text" id="materialSearch" class="actionSearchInput" onkeyup="mySearchFunction('materialSearch','materialTable')" placeholder="Search for names..">
-
-									<table id="materialTable" class="actionTable">
-										<tr class="header">
-											<th style="width:60%;">Name</th>
-											<th style="width:10%;">Type</th>
-											<th style="width:20%;">Date</th>
-											<th style="width:10%;">Actions</th>
-										</tr>
-										<tr class="body">
-											<td>TESS Photometer Manual</td>
-											<td>Document</td>
-											<td>01-07-2019</td>
-											<td><a class="fas fa-file-download" href="https://zenodo.org/record/1492285/files/TESS-W_manual_English_commisioning.pdf?download=1"></a></td>
-										</tr>
-										<tr class="body">
-											<td>STARS4ALL/gwap-enabler: Final release</td>
-											<td>Software</td>
-											<td>01-06-2019</td>
-											<td><a class="fas fa-file-download" href="https://zenodo.org/record/2561253/files/STARS4ALL/gwap-enabler-1.0.zip?download=1"></a></td>
-										</tr>
-										<tr class="body">
-											<td>STARS4ALL-CAPSSI-Workshop</td>
-											<td>Slides</td>
-											<td>01-06-2019</td>
-											<td><a target="_blank" class="fas fa-link" href="https://es.slideshare.net/iricelino/stars4allcapssiworkshop"></a></td>
-										</tr>
-										<tr class="body">
-											<td>Northern lights 2016 from Greenland</td>
-											<td>Images</td>
-											<td>01-06-2019</td>
-											<td><a target="_blank" class="fas fa-link" href="https://www.flickr.com/photos/stars4all/albums/72157672529211261"></a></td>
-										</tr>
-										<tr class="body">
-											<td>Ciencia Ciudadana UPM:ACTION project, un kit de ciencia participativa para combatir la contaminación</td>
-											<td>Video</td>
-											<td>01-05-2019</td>
-											<td><a target="_blank" class="fas fa-link" href="https://www.youtube.com/watch?v=cIyVwmw2AaU&list=PL8bSwVy8_IcMrSdbshRxRxb-oWlRN-vEp&index=6&t=62s"></a></td>
-										</tr>
-									</table>
+									<!-- Control buttons -->
+									<div id="myBtnContainer">
+									  <button class="btn active" style="border-bottom: 0.5rem solid #78652C;" onclick="filterSelection('all')"> Show all</button>
+									  <button class="btn" style="border-bottom: 0.5rem solid #CC0000;" onclick="filterSelection('videoTag')"> Videos</button>
+									  <button class="btn" style="border-bottom: 0.5rem solid #66CC00;" onclick="filterSelection('imageTag')"> Images</button>
+									  <button class="btn" style="border-bottom: 0.5rem solid #CC6600;" onclick="filterSelection('slidesTag')"> Slides</button>
+									  <button class="btn" style="border-bottom: 0.5rem solid #0000CC;" onclick="filterSelection('softwareTag')"> Software</button>
+										<button class="btn" style="border-bottom: 0.5rem solid #606060;" onclick="filterSelection('documentTag')"> Documents</button>
+									</div>
+									<div class="container">
+										<a target="_blank" href="https://www.youtube.com/watch?v=cIyVwmw2AaU&list=PL8bSwVy8_IcMrSdbshRxRxb-oWlRN-vEp&index=6&t=62s">
+											<div class="filterDiv videoTag">
+												<strong>Ciencia Ciudadana UPM:ACTION project, un kit de ciencia participativa para combatir la contaminación</strong>
+											</div>
+										</a>
+										<a target="_blank" style="padding:5px" href="https://www.flickr.com/photos/stars4all/albums/72157672529211261">
+											<div class="filterDiv imageTag">
+												<strong>Northern lights 2016 from Greenland</strong>
+											</div>
+										</a>
+										<a target="_blank" style="padding:5px" href="https://es.slideshare.net/iricelino/stars4allcapssiworkshop">
+											<div class="filterDiv slidesTag">
+												<strong>STARS4ALL-CAPSSI-Workshop</strong>
+											</div>
+										</a>
+										<a target="_blank" style="padding:5px" href="https://zenodo.org/record/2561253/files/STARS4ALL/gwap-enabler-1.0.zip?download=1">
+											<div class="filterDiv softwareTag">
+												<strong>STARS4ALL/gwap-enabler: Final release</strong>
+											</div>
+										</a>
+										<a target="_blank" style="padding:5px" href="https://zenodo.org/record/1492285/files/TESS-W_manual_English_commisioning.pdf?download=1">
+											<div class="filterDiv documentTag">
+												<strong>TESS Photometer Manual</strong>
+											</div>
+										</a>
+									</div>
 								</div>
 
 								<div id="publications" class="tabcontent">

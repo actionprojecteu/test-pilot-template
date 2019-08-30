@@ -90,9 +90,11 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
+
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
+
 
 	body {
 		background: #1b1f22;
@@ -1797,6 +1799,7 @@ input, select, textarea {
   width: 100%; /* Full-width */
   border: 1px solid #78652C; /* Add a grey border */
   font-size: 18px; /* Increase font-size */
+	border-sizing: content-box;
 }
 
 .actionTable th, .actionTable td {
@@ -1818,4 +1821,112 @@ input, select, textarea {
   /* Add a grey background color to the table header and on hover */
 	cursor: pointer;
   background-color: #ddd;
+}
+/*  Material */
+
+#myBtnContainer{
+	padding: 1rem 0 1rem 0;
+}
+
+.videoTag{
+	padding: 0.5rem;
+	border-left: 2rem solid #CC0000;
+	background-color: #ffcccc;
+}
+.videoTag strong{
+	color:#666;
+}
+.videoTag:hover{
+	background-color: #ff6666;
+}
+.imageTag{
+	padding: 0.5rem;
+	border-left: 2rem solid #66CC00;
+	background-color: #E5FFCC;
+}
+.imageTag:hover{
+	background-color: #b2ff66;
+}
+.imageTag strong{
+	color:#666;
+}
+.softwareTag{
+	padding: 0.5rem;
+	border-left: 2rem solid #0000CC;
+	background-color: #CCE5FF;
+}
+.softwareTag:hover{
+	color:#666;
+	background-color: #3399ff;
+}
+.softwareTag strong{
+	color:#666;
+}
+.documentTag{
+	padding: 0.5rem;
+	border-left: 2rem solid #606060;
+	background-color: #E0E0E0;
+}
+.documentTag strong{
+	color:#666;
+}
+.documentTag:hover{
+	color:#666;
+	background-color: #c0c0c0;
+}
+.slidesTag{
+	padding: 0.5rem;
+	border-left: 2rem solid #CC6600;
+	background-color: #FFE5CC;
+}
+.slidesTag:hover{
+	color:#666;
+	background-color: #ffb266;
+}
+.slidesTag strong{
+	color:#666;
+}
+
+/* Filter control */
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+	/*
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;*/
+  display: none; /* Hidden by default */
+
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  /* padding: 12px 16px; */
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #78652C;
+  color: white;
 }
